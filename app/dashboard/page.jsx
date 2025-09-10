@@ -2,6 +2,7 @@
 
 import { Roboto } from "next/font/google";
 import Navbar from "./navbar";
+import UsageChart from "./usageChart";
 
 const robotoFont = Roboto({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ export default function Dashboard() {
       <Navbar />
 
       <div
-        className="flex flex-col grow overflow-y-scroll text-white"
+        className="flex flex-col grow overflow-hidden text-white"
         style={{ scrollbarWidth: "none" }}
       >
         <div className="grid grid-cols-8 h-full">
@@ -333,12 +334,16 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="col-span-7 px-4 py-4">
-            <div className="w-full h-full bg-neutral-800 rounded-xl">
+          <div className="col-span-7 px-4 py-4 overflow-y-scroll">
+            <div className="w-full h-fit bg-neutral-800 rounded-xl">
               <div className="py-4 px-8 text-gray-100">
                 <h1 className={`text-xl font-bold  tracking-wide`}>Usage</h1>
               </div>
               <div className="h-[0.05px] w-full bg-white/30"></div>
+
+              <div>
+                <UsageChart />
+              </div>
             </div>
           </div>
         </div>
