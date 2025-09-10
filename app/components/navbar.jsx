@@ -16,15 +16,17 @@ export default function Navbar() {
           />
         </Link>
         <div className="ml-auto text-emerald-300/80 flex space-x-2 sm:space-x-4 md:space-x-6">
-          {["About", "Contact", "Services", "Impact"].map((item, key) => (
-            <Link
-              href={"#"}
-              className="hover:text-emerald-300 transition-colors duration-200 text-xs sm:text-sm md:text-base font-medium"
-              key={item}
-            >
-              {item}
-            </Link>
-          ))}
+          {["About", "Contact", "Services", "Impact", "Dashboard"].map(
+            (item, key) => (
+              <Link
+                href={item == "Dashboard" ? "/dashboard" : "#"}
+                className="hover:text-emerald-300 transition-colors duration-200 text-xs sm:text-sm md:text-base font-medium"
+                key={item}
+              >
+                {item}
+              </Link>
+            )
+          )}
         </div>
       </div>
     </div>
