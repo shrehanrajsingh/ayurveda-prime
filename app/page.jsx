@@ -4,6 +4,8 @@ import Navbar from "./components/navbar";
 import WhoWeAre from "./components/whoweare";
 import Flow from "./components/flow";
 import Impact from "./components/impact";
+import ContactUs from "./components/contactus";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -21,6 +23,12 @@ export default function Home() {
 
       {/* impact */}
       <Impact />
+
+      {/* contact us */}
+      <ContactUs />
+
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
