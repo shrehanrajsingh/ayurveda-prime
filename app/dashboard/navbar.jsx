@@ -43,7 +43,7 @@ export default function Dashboard() {
           </button>
 
           <div
-            className={`absolute w-[300%] mt-2 py-2 bg-white/20 rounded-xl border border-white/30 ${
+            className={`absolute w-[300%] mt-2 py-2 bg-neutral-800 rounded-xl border border-white/30 ${
               !projectDropdownClick ? "hidden" : ""
             }`}
           >
