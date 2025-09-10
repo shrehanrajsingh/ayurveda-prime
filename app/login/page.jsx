@@ -1,5 +1,6 @@
 import { Arima } from "next/font/google";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 import image4 from "../assets/i4.jpg";
 import Link from "next/link";
@@ -10,33 +11,35 @@ const arimaFont = Arima({
 
 export default function Login() {
   return (
-    <div
-      className="w-full h-screen flex justify-center items-center"
-      style={{
-        backgroundImage: `url(${image4.src})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <Navbar />
+    <>
+      <div
+        className="w-full min-h-screen flex justify-center items-center px-4 sm:px-6 lg:px-8"
+        style={{
+          backgroundImage: `url(${image4.src})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
+        <Navbar />
 
-      <div className="max-w-3xl w-3xl h-128">
-        <div className="flex justify-center items-center w-full gap-8 mb-8 relative">
-          <div className="h-0.5 w-1/6 bg-gradient-to-r from-transparent to-green-400 opacity-70"></div>
-          <h1
-            className={`${arimaFont.className} text-5xl md:text-6xl font-bold text-transparent bg-clip-text relative`}
-            style={{
-              backgroundImage:
-                "linear-gradient(to right, #4ade80, #10b981, #047857)",
-              textShadow: "0 0 30px rgba(16, 185, 129, 0.3)",
-            }}
-          >
-            Login
-          </h1>
-          <div className="h-0.5 w-1/6 bg-gradient-to-l from-transparent to-green-400 opacity-70"></div>
-        </div>
+        <div className="max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl w-full">
+          <div className="flex justify-center items-center w-full gap-4 sm:gap-6 md:gap-8 mb-6 md:mb-8 relative">
+            <div className="h-0.5 w-1/6 bg-gradient-to-r from-transparent to-green-400 opacity-70"></div>
+            <h1
+              className={`${arimaFont.className} text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text relative text-center`}
+              style={{
+                backgroundImage:
+                  "linear-gradient(to right, #4ade80, #10b981, #047857)",
+                textShadow: "0 0 30px rgba(16, 185, 129, 0.3)",
+              }}
+            >
+              Login
+            </h1>
+            <div className="h-0.5 w-1/6 bg-gradient-to-l from-transparent to-green-400 opacity-70"></div>
+          </div>
 
-        <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-lg w-full">
+          <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 md:p-8 shadow-lg w-full">
           <form className="space-y-6">
             <div>
               <label
@@ -158,6 +161,7 @@ export default function Login() {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }

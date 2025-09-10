@@ -1,19 +1,22 @@
+
 import Link from "next/link";
+import logoPNG from "../assets/AyurCare logo.png";
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-emerald-400 text-xl font-bold mb-4">
-              AyurCare
-            </h3>
-            <p className="text-gray-300 mb-4">
-              Pioneering Ayurvedic knowledge through advanced geotagging
-              technology. Connecting ancient wisdom with modern innovation.
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="flex items-center gap-2 mb-3 md:mb-4">
+              <img src={logoPNG.src} alt="AyurCare Logo" className="w-10 h-10 md:w-12 md:h-12 rounded-full shadow" />
+              <h3 className="text-emerald-400 text-lg md:text-xl font-bold">AyurCare</h3>
+            </div>
+            <p className="text-gray-300 mb-4 text-sm md:text-base leading-relaxed">
+              A digital platform demonstrating how blockchain and AI can transform 
+              the Ayurvedic industry through transparency and innovation.
             </p>
-            <div className="flex space-x-4 mt-4">
+            <div className="flex space-x-3 md:space-x-4 mt-4">
               <Link href="#" className="text-gray-400 hover:text-emerald-400">
                 <svg
                   className="h-6 w-6"

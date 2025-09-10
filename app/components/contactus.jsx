@@ -6,11 +6,11 @@ const arimaFont = Arima({
 
 export default function ContactUs() {
   return (
-    <div className="bg-emerald-950 py-24">
-      <div className="flex justify-center items-center w-full gap-8 mb-24 relative">
+    <div className="bg-emerald-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-center items-center w-full gap-4 sm:gap-6 md:gap-8 mb-16 md:mb-24 relative">
         <div className="h-0.5 w-1/6 bg-gradient-to-r from-transparent to-green-400 opacity-70"></div>
         <h1
-          className={`${arimaFont.className} text-6xl md:text-7xl font-bold text-transparent bg-clip-text relative`}
+          className={`${arimaFont.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text relative text-center`}
           style={{
             backgroundImage:
               "linear-gradient(to right, #4ade80, #10b981, #047857)",
@@ -22,10 +22,10 @@ export default function ContactUs() {
         <div className="h-0.5 w-1/6 bg-gradient-to-l from-transparent to-green-400 opacity-70"></div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-emerald-900/50 backdrop-blur-sm rounded-xl shadow-2xl shadow-emerald-900/20 p-8 md:p-10 border border-emerald-800/30">
-          <form className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-emerald-900/50 backdrop-blur-sm rounded-xl shadow-2xl shadow-emerald-900/20 p-6 md:p-8 lg:p-10 border border-emerald-800/30">
+          <form className="space-y-4 md:space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <div>
                 <label
                   htmlFor="name"
@@ -37,7 +37,7 @@ export default function ContactUs() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full px-4 py-3 rounded-lg bg-emerald-950/80 border border-emerald-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 focus:outline-none transition-all text-white placeholder-emerald-600"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-emerald-950/80 border border-emerald-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 focus:outline-none transition-all text-white placeholder-emerald-600 text-sm md:text-base"
                   placeholder="John Doe"
                   required
                 />
@@ -53,7 +53,7 @@ export default function ContactUs() {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full px-4 py-3 rounded-lg bg-emerald-950/80 border border-emerald-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 focus:outline-none transition-all text-white placeholder-emerald-600"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-emerald-950/80 border border-emerald-700 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/50 focus:outline-none transition-all text-white placeholder-emerald-600 text-sm md:text-base"
                   placeholder="john@example.com"
                   required
                 />
@@ -173,9 +173,12 @@ export default function ContactUs() {
             </div>
             <h3 className="text-lg font-medium text-emerald-300">Location</h3>
             <p className="mt-2 text-emerald-400">
-              123 Business St, Suite 100
+              123 Ayurveda Lane,
               <br />
-              New York, NY 10001
+
+Wellness District,
+
+Kerala
             </p>
           </div>
         </div>

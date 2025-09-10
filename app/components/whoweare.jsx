@@ -39,11 +39,11 @@ export default function WhoWeAre() {
         ></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex justify-center items-center w-full gap-8 mb-24 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex justify-center items-center w-full gap-4 sm:gap-6 md:gap-8 mb-16 md:mb-24 relative">
           <div className="h-0.5 w-1/6 bg-gradient-to-r from-transparent to-green-400 opacity-70"></div>
           <h1
-            className={`${arimaFont.className} text-6xl md:text-7xl font-bold text-transparent bg-clip-text relative`}
+            className={`${arimaFont.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text relative text-center`}
             style={{
               backgroundImage:
                 "linear-gradient(to right, #4ade80, #10b981, #047857)",
@@ -55,7 +55,7 @@ export default function WhoWeAre() {
           <div className="h-0.5 w-1/6 bg-gradient-to-l from-transparent to-green-400 opacity-70"></div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 mb-20 md:mb-32">
           <div
             className="transform transition-all duration-700 hover:scale-102"
             data-aos="fade-right"
@@ -83,53 +83,51 @@ export default function WhoWeAre() {
           </div>
 
           <div
-            className={`flex flex-col justify-center ${merriweatherFont.className} pl-0 lg:pl-12`}
+            className={`flex flex-col justify-center ${merriweatherFont.className} pl-0 lg:pl-8 xl:pl-12`}
             data-aos="fade-left"
           >
-            <p className="text-xl md:text-2xl text-green-50 leading-relaxed mb-8 backdrop-blur-sm bg-black/10 p-8 rounded-lg shadow-inner border border-green-900/30">
-              <span className="text-5xl font-light text-green-400 drop-shadow-lg mr-3 float-left mt-1">
+            <p className="text-base md:text-base lg:text-lg text-green-50 leading-relaxed mb-8 backdrop-blur-sm bg-black/10 p-6 md:p-8 rounded-lg shadow-inner border border-green-900/30">
+              <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
                 W
               </span>
-              e are a multinational brand producing who partner up with
-              certified organic and Ayurvedic health products (like Tulsi
-              infusions), and equip them with a blockchain and digitization
-              platform, to promote transparency and sustainability in its supply
-              chain.
+              e are a digital platform prototype that partners with producers of
+              certified organic and Ayurvedic health products, such as Tulsi
+              infusions. Our blockchain and digitization technology promotes
+              transparency and sustainability throughout the supply chain.
             </p>
 
-            <p className="text-xl md:text-2xl text-green-50 leading-relaxed backdrop-blur-sm bg-black/10 p-8 rounded-lg shadow-inner border border-green-900/30">
-              <span className="text-5xl font-light text-green-400 drop-shadow-lg mr-3 float-left mt-1">
-                W
+            <p className="text-base md:text-base lg:text-lg text-green-50 leading-relaxed backdrop-blur-sm bg-black/10 p-6 md:p-8 rounded-lg shadow-inner border border-green-900/30">
+              <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
+                O
               </span>
-              e also utilize Artificial Intelligence in analyzing genomic,
-              lifestyle, and environmental data to develop targeted treatment
-              plans.
+              ur platform also features Artificial Intelligence that analyzes genomic,
+              lifestyle, and environmental data to develop personalized treatment
+              recommendations for better health outcomes.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 mb-16 md:mb-20">
           <div
-            className={`flex flex-col justify-center ${merriweatherFont.className} pr-0 lg:pr-12 order-2 lg:order-1`}
+            className={`flex flex-col justify-center ${merriweatherFont.className} pr-0 lg:pr-8 xl:pr-12 order-2 lg:order-1`}
             data-aos="fade-right"
           >
-            <p className="text-xl md:text-2xl text-green-50 leading-relaxed mb-8 backdrop-blur-sm bg-black/10 p-8 rounded-lg shadow-inner border border-green-900/30">
-              <span className="text-5xl font-light text-green-400 drop-shadow-lg mr-3 float-left mt-1">
+            <p className="text-base md:text-base lg:text-lg text-green-50 leading-relaxed mb-8 backdrop-blur-sm bg-black/10 p-6 md:p-8 rounded-lg shadow-inner border border-green-900/30">
+              <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
                 B
               </span>
-              lockchain-powered system promotes sustainable and ethical
-              procurement by ensuring compliance with regulatory standards and
-              preventing the exploitation of natural resources.
+              lockchain technology ensures sustainable and ethical sourcing
+              by maintaining compliance with regulatory standards and
+              preventing exploitation of natural resources through transparent tracking.
             </p>
 
-            <p className="text-xl md:text-2xl text-green-50 leading-relaxed backdrop-blur-sm bg-black/10 p-8 rounded-lg shadow-inner border border-green-900/30">
-              <span className="text-5xl font-light text-green-400 drop-shadow-lg mr-3 float-left mt-1">
-                B
+            <p className="text-base md:text-base lg:text-lg text-green-50 leading-relaxed backdrop-blur-sm bg-black/10 p-6 md:p-8 rounded-lg shadow-inner border border-green-900/30">
+              <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
+                T
               </span>
-              y integrating AI and blockchain, the Ayurvedic industry can
-              achieve greater transparency, quality assurance, and supply chain
-              efficiency, ensuring that only genuine, high-quality Ayurvedic
-              products reach consumers.
+              hrough the integration of AI and blockchain technology, we demonstrate
+              how modern solutions can enhance quality assurance and supply chain
+              transparency, ensuring authentic Ayurvedic products reach consumers.
             </p>
           </div>
 
