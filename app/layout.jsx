@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "AyurCare - Taste The Journey of Ayurveda",
+  title: "AyurCare - Trace The Journey of Ayurveda",
   description: "Experience the essence of Ayurveda with AyurCare",
 };
 
