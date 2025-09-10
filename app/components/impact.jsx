@@ -48,8 +48,8 @@ export default function Impact() {
   }, []);
 
   return (
-    <div className="font-sans px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-8 min-h-[75vh] shadow-2xl overflow-hidden rounded-lg">
+    <div className="font-sans">
+      <div className="grid grid-cols-1 lg:grid-cols-8 min-h-[75vh] shadow-2xl overflow-hidden">
         <div className="lg:col-span-2 bg-gradient-to-br from-green-950 via-emerald-900 to-green-950 h-full relative p-6 lg:p-0">
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-green-500/30 via-emerald-400 to-green-500/30"></div>
           <div className="absolute -left-20 top-1/4 w-40 h-40 rounded-full bg-emerald-600/20 blur-3xl"></div>
