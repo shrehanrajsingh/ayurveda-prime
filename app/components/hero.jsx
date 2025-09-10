@@ -1,5 +1,6 @@
 import { Arima } from "next/font/google";
 import image3 from "../assets/i4.jpg";
+import Link from "next/link";
 
 const arimaFont = Arima({
   subsets: ["latin"],
@@ -31,12 +32,18 @@ export default function Hero() {
       </div>
 
       <div className="mt-10 flex gap-6">
-        <button className="px-6 cursor-pointer py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-emerald-500/30 hover:-translate-y-1 border border-emerald-600">
+        <Link
+          href={"/signup"}
+          className="px-6 cursor-pointer py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-emerald-500/30 hover:-translate-y-1 border border-emerald-600"
+        >
           Create Account
-        </button>
-        <button className="px-6 cursor-pointer py-3 bg-black/80 hover:bg-black text-emerald-400 hover:text-emerald-300 font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-black/40 hover:-translate-y-1 border border-emerald-800">
+        </Link>
+        <Link
+          href={"/login"}
+          className="px-6 cursor-pointer py-3 bg-black/80 hover:bg-black text-emerald-400 hover:text-emerald-300 font-semibold rounded-lg shadow-lg transition-all duration-300 hover:shadow-black/40 hover:-translate-y-1 border border-emerald-800"
+        >
           Login
-        </button>
+        </Link>
       </div>
     </div>
   );
