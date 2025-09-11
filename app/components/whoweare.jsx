@@ -25,6 +25,7 @@ export default function WhoWeAre() {
           "linear-gradient(135deg, rgb(5, 25, 10) 0%, rgb(12, 45, 22) 100%)",
         backgroundAttachment: "fixed",
       }}
+      id="about"
     >
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
@@ -100,9 +101,9 @@ export default function WhoWeAre() {
               <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
                 O
               </span>
-              ur platform also features Artificial Intelligence that analyzes genomic,
-              lifestyle, and environmental data to develop personalized treatment
-              recommendations for better health outcomes.
+              ur platform also features Artificial Intelligence that analyzes
+              genomic, lifestyle, and environmental data to develop personalized
+              treatment recommendations for better health outcomes.
             </p>
           </div>
         </div>
@@ -116,18 +117,19 @@ export default function WhoWeAre() {
               <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
                 B
               </span>
-              lockchain technology ensures sustainable and ethical sourcing
-              by maintaining compliance with regulatory standards and
-              preventing exploitation of natural resources through transparent tracking.
+              lockchain technology ensures sustainable and ethical sourcing by
+              maintaining compliance with regulatory standards and preventing
+              exploitation of natural resources through transparent tracking.
             </p>
 
             <p className="text-base md:text-base lg:text-lg text-green-50 leading-relaxed backdrop-blur-sm bg-black/10 p-6 md:p-8 rounded-lg shadow-inner border border-green-900/30">
               <span className="text-4xl md:text-5xl font-light text-green-400 drop-shadow-lg mr-2 md:mr-3 float-left mt-1">
                 T
               </span>
-              hrough the integration of AI and blockchain technology, we demonstrate
-              how modern solutions can enhance quality assurance and supply chain
-              transparency, ensuring authentic Ayurvedic products reach consumers.
+              hrough the integration of AI and blockchain technology, we
+              demonstrate how modern solutions can enhance quality assurance and
+              supply chain transparency, ensuring authentic Ayurvedic products
+              reach consumers.
             </p>
           </div>
 

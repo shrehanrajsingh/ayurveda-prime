@@ -9,30 +9,35 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Arima } from "next/font/google";
 
+import f1 from "../assets/f1.webp";
+import f2 from "../assets/f2.jpg";
+import f3 from "../assets/f3.jpeg";
+import f4 from "../assets/f4.jpg";
+
 const arimaFont = Arima({
   subsets: ["latin"],
 });
 
 const image_data = [
   {
-    path: image7,
-    title: "Image 1",
-    desc: "Some random description 1",
+    path: f1,
+    title: "Organic Ashwagandha Fields",
+    desc: "Sustainable cultivation in the pristine valleys of Shimla, where traditional farming practices meet modern organic standards to produce premium-quality Ashwagandha roots.",
   },
   {
-    path: image8,
-    title: "Image 2",
-    desc: "Some random description 2",
+    path: f2,
+    title: "Assam Tea Gardens",
+    desc: "Our network of family-owned tea gardens in Assam implements biodiversity preservation techniques while growing medicinal herbs alongside traditional tea plants.",
   },
   {
-    path: image9,
-    title: "Image 3",
-    desc: "Some random description 3",
+    path: f3,
+    title: "Himalayan Herb Collection",
+    desc: "Local communities in the Himalayan foothills responsibly harvest rare medicinal herbs using sustainable methods that preserve these precious botanical resources.",
   },
   {
-    path: image2,
-    title: "Image 4",
-    desc: "Some random description 4",
+    path: f4,
+    title: "Community Farming Initiative",
+    desc: "Empowering farmers in Guwahati through education on sustainable Ayurvedic herb cultivation, creating economic opportunities while preserving ancient agricultural wisdom.",
   },
 ];
 
@@ -48,8 +53,8 @@ export default function Impact() {
   }, []);
 
   return (
-    <div className="font-sans">
-      <div className="grid grid-cols-1 lg:grid-cols-8 min-h-[75vh] shadow-2xl overflow-hidden">
+    <div className="font-sans" id="impact">
+      <div className="grid grid-cols-1 lg:grid-cols-8 min-h-[100vh] shadow-2xl overflow-hidden">
         <div className="lg:col-span-2 bg-gradient-to-br from-green-950 via-emerald-900 to-green-950 h-full relative p-6 lg:p-0">
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-green-500/30 via-emerald-400 to-green-500/30"></div>
           <div className="absolute -left-20 top-1/4 w-40 h-40 rounded-full bg-emerald-600/20 blur-3xl"></div>
@@ -66,7 +71,7 @@ export default function Impact() {
             <span className="block h-1 w-24 bg-gradient-to-r from-transparent via-emerald-500 to-transparent mx-auto mt-3"></span>
           </h1>
 
-          <div className="py-6 px-8 flex flex-col gap-5 overflow-y-auto max-h-[55vh] scrollbar-thin scrollbar-thumb-emerald-700 scrollbar-track-green-950">
+          <div className="py-6 px-8 flex flex-col gap-5 overflow-y-auto max-h-[90vh] scrollbar-thin scrollbar-thumb-emerald-700 scrollbar-track-green-950">
             {image_data.map((image, index) => (
               <div
                 key={index}

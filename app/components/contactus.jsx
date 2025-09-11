@@ -6,7 +6,10 @@ const arimaFont = Arima({
 
 export default function ContactUs() {
   return (
-    <div className="bg-emerald-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div
+      className="bg-emerald-950 py-16 md:py-24 px-4 sm:px-6 lg:px-8"
+      id="contact"
+    >
       <div className="flex justify-center items-center w-full gap-4 sm:gap-6 md:gap-8 mb-16 md:mb-24 relative">
         <div className="h-0.5 w-1/6 bg-gradient-to-r from-transparent to-green-400 opacity-70"></div>
         <h1
@@ -124,7 +127,7 @@ export default function ContactUs() {
               </svg>
             </div>
             <h3 className="text-lg font-medium text-emerald-300">Phone</h3>
-            <p className="mt-2 text-emerald-400">+1 (555) 123-4567</p>
+            <p className="mt-2 text-emerald-400">+91 98765 43210</p>
           </div>
 
           <div className="p-6 rounded-xl bg-emerald-900/30 border border-emerald-800/30 hover:bg-emerald-800/30 transition-all">
@@ -145,7 +148,7 @@ export default function ContactUs() {
               </svg>
             </div>
             <h3 className="text-lg font-medium text-emerald-300">Email</h3>
-            <p className="mt-2 text-emerald-400">info@example.com</p>
+            <p className="mt-2 text-emerald-400">info@ayurcare.com</p>
           </div>
 
           <div className="p-6 rounded-xl bg-emerald-900/30 border border-emerald-800/30 hover:bg-emerald-800/30 transition-all">
@@ -175,10 +178,7 @@ export default function ContactUs() {
             <p className="mt-2 text-emerald-400">
               123 Ayurveda Lane,
               <br />
-
-Wellness District,
-
-Kerala
+              Wellness District, Kerala
             </p>
           </div>
         </div>
