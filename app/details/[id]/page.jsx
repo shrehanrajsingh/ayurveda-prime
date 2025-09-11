@@ -53,8 +53,7 @@ import { Arima } from "next/font/google";
 
 import map1 from "../../assets/map1.png";
 import Image from "next/image";
-
-import Navbar from "@/app/dashboard/navbar";
+import Navbar from "@/app/components/navbar";
 
 const arimaFont = Arima({
   subsets: ["latin"],
@@ -301,7 +300,7 @@ export default function ParticularDetail() {
         ],
       });
       setLoading(false);
-    }, 1);
+    }, 2000);
   }, [id]);
 
   if (loading) {
@@ -334,6 +333,7 @@ export default function ParticularDetail() {
 
   return (
     <div className="bg-black">
+      <Navbar />
       <div className="min-h-screen bg-black py-24 px-48">
         <header className="mb-8">
           <div className="flex items-center mb-4">
