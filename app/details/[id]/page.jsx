@@ -345,7 +345,7 @@ export default function ParticularDetail() {
             <div className="flex justify-center items-center w-full gap-8 mb-24 relative">
               <div className="h-0.5 w-1/6 bg-gradient-to-r from-transparent to-green-400 opacity-70"></div>
               <h1
-                className={`${arimaFont.className} text-6xl md:text-7xl font-bold text-transparent bg-clip-text relative text-center`}
+                className={`${arimaFont.className} text-6xl md:text-7xl mt-8 font-bold text-transparent bg-clip-text relative text-center`}
                 style={{
                   backgroundImage:
                     "linear-gradient(to right, #4ade80, #10b981, #047857)",
